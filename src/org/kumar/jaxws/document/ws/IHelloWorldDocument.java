@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.kumar.jaxws.rpc.ws;
+package org.kumar.jaxws.document.ws;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -13,12 +13,10 @@ import javax.jws.soap.SOAPBinding.Style;
  *
  */
 @WebService  
-@SOAPBinding(style = Style.RPC)  
-public interface IHelloWorld {
+@SOAPBinding(style = Style.DOCUMENT)  
+public interface IHelloWorldDocument {
 	
 	@WebMethod
-	public String getRPCHelloWorld(String name);
+	public String getDocumentHelloWorld(String name);
 	
-	@WebMethod
-	public String getSampleReturn() ;
 }

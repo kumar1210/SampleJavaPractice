@@ -17,8 +17,8 @@ import javax.jws.soap.SOAPBinding.Style;
 public class HelloWorldImpl implements IHelloWorld{
 	
 	@Override
-	public String getHelloWorldAsString(String name) {
-		return "Hello World of RPC With " + name;
+	public String getRPCHelloWorld(String name) {
+		return "Hello World of JAX-WS RPC With " + name;
 	}
 
 	@Override
