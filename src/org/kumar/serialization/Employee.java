@@ -47,11 +47,23 @@ public class Employee implements Serializable {
 		this.address = address;
 	}
 
+	/**
+	 *  This method will be called while converting an object to stream 
+	 * @param oos
+	 * @throws IOException
+	 */
 	private void writeObject(ObjectOutputStream oos) throws IOException {
 		oos.defaultWriteObject();
 		oos.writeObject(address.getHouseNumber());
 	}
 
+	/**
+	 * 
+	 * 	This method will be called while converting stream to object
+	 * @param ois
+	 * @throws ClassNotFoundException
+	 * @throws IOException
+	 */
 	private void readObject(ObjectInputStream ois) throws ClassNotFoundException, IOException {
 		ois.defaultReadObject();
 		Integer houseNumber = (Integer) ois.readObject();
