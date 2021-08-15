@@ -2,6 +2,7 @@
 Java API's Sample
 
 package 1 :
+
 			: org.kumar.jaxws.rpc  -- it contains the JAX-WS RPC implementation
 			: org.kumar.jaxws.document -- contains the JAX-WS document implementation
 					
@@ -9,6 +10,8 @@ package 1 :
 					org.kumar.jaxws.<service>.ws, i.e. @SOAPBinding(style = <style-name>)
 					
 package 2 : 
+
 			: org.kumar.serialization  -- it contains the sample implementation of serialization
+			
 			Note : Check the "readObject" and "writeObject" in Employee.java
 		
